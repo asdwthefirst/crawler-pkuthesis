@@ -11,7 +11,6 @@ if __name__ == '__main__':
         print('not enough arguement to call')
         sys.exit(1)
     input_file = sys.argv[1]
-    # output_dir = sys.argv[2]
     output_dir=os.path.join(os.path.dirname(input_file),'tmpimgdir/')
     input = open(input_file, 'r')
     for line in input:
